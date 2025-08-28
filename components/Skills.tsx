@@ -1,5 +1,5 @@
-import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiCypress, SiThreedotjs } from "react-icons/si";
+import { FaReact, FaGitAlt } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux } from "react-icons/si";
 
 export default function Skills() {
   const skills = [

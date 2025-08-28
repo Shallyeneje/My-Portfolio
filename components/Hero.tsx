@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="flex items-center justify-center min-h-screen bg-white text-gray-800 px-6">
@@ -48,7 +50,7 @@ export default function Hero() {
 
         {/* ✅ Right: Hero Image */}
         <div className="flex justify-center md:justify-end">
-          <img
+          <Image
             src="/hero1.png"
             alt="Hero Image"
             className="w-72 md:w-auto h-auto rounded-xl "

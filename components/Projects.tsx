@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Project {
   title: string;
   description: string;
@@ -50,7 +52,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((p, idx) => (
             <div key={idx} className="rounded-2xl shadow-lg overflow-hidden bg-white">
-              <img src={p.image} alt={p.title} className="w-full h-48 object-cover" />
+              <Image src={p.image} alt={p.title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{p.title}</h3>
                 <p className="text-gray-600 mb-4">{p.description}</p>

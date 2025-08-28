@@ -15,7 +15,7 @@ export default function About() {
           bringing user experiences to life. I’ve built and deployed projects
           including; edutech and e-commerce applications and worked on API
           integrations, custom styling, and scalable layouts. */}
-          I'm a frontend Developer
+          I`&apos;`m a frontend Developer
           with a strong background in building user-friendly, responsive web
           applications using React, Next.js, TypeScript, Tailwindcss and modern web
           technologies. Experienced in API integration, Redux state management,

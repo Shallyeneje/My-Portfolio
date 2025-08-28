@@ -1,4 +1,4 @@
-import { FaEnvelope, FaFacebook, FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import {FaGithub, FaLinkedinIn} from "react-icons/fa";
 import Link from "next/link";
 
 export default function Contact() {
@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="container mx-auto pt-3 px-4 grid grid-cols-1 md:flex md:justify-between md:items-start gap-8">
         {/* Stay Up to Date Section */}
         <div className="md:flex-1">
-          <h3 className="text-[16px]">let's build sommething amazing together</h3>
+          <h3 className="text-[16px]">let`&apos;`s build sommething amazing together</h3>
           <h3 className="text-[28px] font-bold mb-6">Contact me</h3>
           <div>
             <form className="border-[1px] border-white rounded flex items-center">
