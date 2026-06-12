@@ -39,9 +39,9 @@ export default function Hero() {
             </a> */}
             {/* ✅ Resume Button */}
             <a
-              href="/Eneje_Chimcheberem_Shalom_CV.pdf"
+              href="/Chimcheberem_Shalom_Frontend_Engineer_CV.pdf"
               download
-              className="px-6 py-3 rounded-2xl border border-gray-400 hover:bg-gray-700transition"
+              className="px-6 py-3 rounded-2xl border border-gray-400 hover:bg-gray-700 transition"
             >
               Download Resume
             </a>
@@ -50,11 +50,15 @@ export default function Hero() {
 
         {/* ✅ Right: Hero Image */}
         <div className="flex justify-center md:justify-end">
-          <Image
-            src="/hero1.png"
-            alt="Hero Image"
-            className="w-72 md:w-auto h-auto rounded-xl "
-          />
+          <div className="relative w-72 md:w-96 h-96">
+            <Image
+              src="/hero1.png"
+              alt="Hero Image"
+              fill
+              className="object-cover rounded-xl"
+              sizes="(max-width: 768px) 288px, 384px"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const projects: Project[] = [
     title: "StudyBoosta",
     description: "An educational platform with video courses and Q&A features.",
     tech: ["Next.js", "TypeScript", "Tailwind"],
-    live: "www.studyboosta.com",
+    live: "https://study-boosta.vercel.app/",
     github: "https://github.com/shallyeneje/study-boosta",
     image: "/studyboosta.png"
   },
@@ -35,11 +35,19 @@ const projects: Project[] = [
     image: "/mimipoint.png"
   },
   {
+    title: "Wedding Site",
+    description: "A responsive wedding website with event details, gallery, gift section and RSVP functionality.",
+    tech: ["Next.js", "TypeScript", "Tailwind"],
+    live: "https://mims-wedding-site.vercel.app/",
+    github: "https://github.com/shallyeneje/weddingsite",
+    image: "/wedding.png"
+  },
+  {
     title: "Task Planner",
     description: "A task management app with modals, checkboxes, and toast notifications.",
     tech: ["React", "Vite", "Tailwind", "ShadCN"],
     live: "https://taskplanner.vercel.app",
-    github: "https://github.com/yourgithub/taskplanner",
+    github: "https://github.com/shallyeneje/taskplanner",
     image: "/taskplanner.png"
   },
 ];
@@ -52,7 +60,9 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((p, idx) => (
             <div key={idx} className="rounded-2xl shadow-lg overflow-hidden bg-white">
-              <Image src={p.image} alt={p.title} className="w-full h-48 object-cover" />
+              <div className="relative w-full h-48">
+                <Image src={p.image} alt={p.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{p.title}</h3>
                 <p className="text-gray-600 mb-4">{p.description}</p>
